@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block menu %}
+<ul>
+{% for menu_item in menu_items  %}
+    <li><a href="{{ menu_item.link }}">{{ menu_item.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
